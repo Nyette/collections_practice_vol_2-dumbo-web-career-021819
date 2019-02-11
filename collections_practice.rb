@@ -59,7 +59,7 @@ def merge_data(keys, data)
 	merged_data = []
   keys.each do |hash|
     data.first.collect do |key, value|
-      if hash.values[0] == key
+      if hash.values.first == key
         merged_data << hash.merge(value)
       end
     end
