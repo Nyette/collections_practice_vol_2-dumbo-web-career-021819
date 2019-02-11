@@ -32,8 +32,6 @@ end
 
 
 def find_cool(cool)
-  # cool = {[{:name => "ashley", :temperature => "sort of cool"}, {:name => "blake", :temperature => "cool"}]}
-  # The method should return [{:name => "blake", :temperature => "cool"}] when it is called
   array = []
   cool.each do |hash|
     if hash[:temperature] == "cool"
